@@ -10,3 +10,6 @@ activity = input()
 if activity.lower() == "calculate":
     print ("Performing Calculations...:")
     print ("Activity completed!")
+else:
+    print ("You entered a wrong activity.")
+
