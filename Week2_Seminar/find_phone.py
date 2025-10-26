@@ -27,5 +27,3 @@ elif place == "in the living room":
 
 else:
     print("I do not know where that is but I will keep looking.")
-
-    broken code
