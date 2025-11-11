@@ -7,3 +7,6 @@ print(cars) #this will print entire list as single object
 cars = ["Ford", "Volvo", "BMW"]
 for x in cars: # this will print all car names one by one
     print(x)
+
+#printing length of the array
+print(len(cars))
