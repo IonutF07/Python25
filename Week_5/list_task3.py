@@ -1,6 +1,6 @@
-#Simple list - Store Maze Directions
+#Iterate - Build a menu from a list
 def directions(): #Define a function called directions.
-    #create a list of maze directions
+    #create a list of directions
     steps = ["Move forward","Move backward","Turn Left","Turn Right"]
     return steps #return complete list of steps
 def menu():#
@@ -10,7 +10,6 @@ def menu():#
     for index in range (len(steps)):
         direction = steps[index]
         print(f"{index}:{direction}") 
-
 def run_task3():
     menu() # Display the menu
 #Ensure task3 runs when this script is executed
