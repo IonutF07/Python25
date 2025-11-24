@@ -1,0 +1,9 @@
+Lines of text:
+Line 1: Hello, Ionut!
+Line 2: Practicing Python file handling.
+Line 3: Each line ends with \n.
+Line 4: Cybersecurity journey in progress.
+Line 5: Transitioning from construction to tech.
+Line 6: Hands-on troubleshooting is a strength.
+Line 7: Python scripts make workflows smoother.
+Line 8: File created successfully!
