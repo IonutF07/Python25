@@ -14,5 +14,5 @@ print(my_set) # Output: {1, 2, 4, 5, 6}
 print(4 in my_set) # Output: True
 print(3 in my_set) # Output: False
 
-#Printing lenght of a set using len() function:
+#Printing length of a set using len() function:
 print(len(my_set)) # Output: 5
