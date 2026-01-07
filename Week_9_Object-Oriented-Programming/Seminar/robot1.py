@@ -30,8 +30,37 @@ class Robot:
     def __str__(self):
         return f'My name is {self.name} and I am {self.age} years old and my energy is {self.energy}.'
 
+    # Instance method: increase age by 1
+    def grow(self):
+        self.age += 1
+
+    # Instance method: increase energy with max cap, return overflow if any
+    def eat(self, amount):
+        potential_energy = self.energy + amount
+        if (potential_energy > Robot.MAX_ENERGY):
+            self.energy = Robot.MAX_ENERGY
+            return potential_energy - self.energy
+        else:
+            self.energy = potential_energy
+            return 0
+
+    # Instance method: decrease energy with floor at 0, return shortfall if any
+    def move(self, distance):
+        potential_energy = self.energy - distance
+        if (potential_energy < 0):
+            self.energy = 0
+            return self.energy - abs(potential_energy)
+        else:
+            self.energy = potential_energy
+            return 0
+
 # Testing the Robot class
 if __name__ == "__main__":
     robot = Robot()
     print(repr(robot))
-    print(robot)
+    robot.move(10)
+    print(repr(robot))
+    robot.eat(5)
+    print(repr(robot))
+
+
