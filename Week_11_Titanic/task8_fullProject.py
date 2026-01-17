@@ -112,26 +112,25 @@ def display_survivors_by_age_group():
 
 def run_task8():
     load("titanic.csv")
-while True:
+    while True:
 
-    option = menu()
+        option = menu()
 
-    if option == 1:
-        display_names()
-    elif option == 2:
-        display_survivors_total()
-    elif option == 3:
-        display_gender_counts()
-    elif option == 4:
-        display_age_groups()
-    elif option == 5:
-        display_survivors_by_age_group()
-    elif option == 0:
-        print("Exiting...")
-        break
-
-    else:
-        print("Error! Option not recognised!")
+        if option == 1:
+            display_names()
+        elif option == 2:
+            display_survivors_total()
+        elif option == 3:
+            display_gender_counts()
+        elif option == 4:
+            display_age_groups()
+        elif option == 5:
+            display_survivors_by_age_group()
+        elif option == 0:
+            print("Exiting...")
+            break
+        else:
+            print("Error! Option not recognised!")
 
 
 if __name__ == "__main__":
