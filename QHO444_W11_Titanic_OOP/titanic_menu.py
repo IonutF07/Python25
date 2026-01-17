@@ -11,7 +11,7 @@ class TitanicMenu:
         print("[3] Display the number of passengers per gender")
         print("[4] Display the number of passengers per age group")
         print("[5] Display the number of survivors per age group")
-        print()
+        print("[0] Exit") # Adding exit option
 
         # Convert user input from string to integer
         return int(input())
